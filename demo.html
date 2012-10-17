@@ -1,0 +1,32 @@
+<!doctype html>
+<title>Demo - Natice Color Picker</title>
+<style>body{font-family:verdana;background-color:#ebebeb;padding:30px}h1{font-family:'Trebuchet MS';font-weight:700;font-size:30px;margin-bottom:20px}#content{background-color:#fff;border:3px solid #ccc;padding:20px}p{margin:20px 0}input{position:relative;top:10px}label{cursor:pointer;font-size:14px}</style>
+
+<h1>Native Color Picker</h1>
+
+<div id="content">
+  <p>
+    <label>Choose a color: <input type="color" id="color"></label>
+    <button id="btn_color">get value</button>
+  </p>
+  <p>
+    <label>Choose another color: <input type="color" id="color2"></label>
+    <button id="btn_color2">get value</button>
+  </p>
+</div>
+
+<a href="http://github.com/dciccale/nativeColorPicker"><img style="position: absolute; top: 0; right: 0; border: 0" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+
+<script src="nativeColorPicker.js"></script>
+<script>
+(function () {
+  window.nativeColorPicker.init('color');
+  window.nativeColorPicker.init('color2');
+
+  ///// just for button clicks /////
+  var $=function(id){return document.getElementById(id)},alertColor=function(){alert($(this.id.split('_')[1]).value);};
+  $('btn_color').onclick = alertColor;
+  $('btn_color2').onclick = alertColor;
+  //////////////////////////////////////
+}());
+</script>
