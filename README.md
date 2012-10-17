@@ -2,7 +2,7 @@
 
 A JavaScript Native Color Picker Polyfill for Internet Explorer
 
-# Browser support
+## Browser support
 IE5.5+
 
 ## Usage
