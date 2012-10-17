@@ -10,5 +10,11 @@ IE5.5+
 
 ## Screenshots
 
+### Internet Explorer
+![nativeColorPicker Internet Explorer](http://dciccale.github.com/nativeColorPicker/nativeColorPicker_ie.jpg)
+
+### Google Chrome
+![nativeColorPicker Google Chrome](http://dciccale.github.com/nativeColorPicker/nativeColorPicker_chrome.jpg)
+
 ## License
 See [LICENSE.txt](https://raw.github.com/dciccale/nativeColorPicker/master/LICENSE.txt)
