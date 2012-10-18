@@ -27,6 +27,7 @@
 
         // input defaults
         this.input.value = this.color;
+        this.input.unselectable = 'on';
         this.css(this.input, {
           backgroundColor: this.color,
           borderWidth: '0.4em 0.3em',
@@ -105,30 +106,23 @@
       // gets the color from the object
       // and normalize it
       getColor: function () {
-        var colordec = document.getElementById('colorHelperObj').choosecolordlg(),
-          hexcolor = (+colordec).toString(16);
+        // get decimal color, (passing the previous one)
+        // and change to hex
+        var hex = colorHelperObj.ChooseColorDlg(this.color.replace(/#/, '')).toString(16);
 
-        return this.normalizeHex(hexcolor);
+        // add extra zeroes if hex number is less than 6 digits
+        if (hex.length < 6) {
+          var tmpstr = '000000'.substring(0, 6 - hex.length);
+          hex = tmpstr.concat(hex);
+        }
+
+        return '#' + hex;
       },
       // set css properties
       css: function (el, props) {
         for (var prop in props) {
           el.style[prop] = props[prop];
         }
-      },
-      // normalize hex color
-      normalizeHex: function (hex) {
-        var l = hex.length,
-          c = '([\\da-f])',
-          r = {
-            1: [c, '$0$0$0$0$0$0'], // 0
-            2: [c + c, '0000$1$2'], // 40
-            3: [c + c + c, '$1$1$2$2$3$3'], // 0fc
-            4: ['^' + c, '00$1'], // 80ff
-            6: '#' + hex // ff0000
-          };
-
-        return '#' + (l === 6 ? hex : hex.replace(RegExp(r[l][0]), r[l][1]));
       }
     };
 
