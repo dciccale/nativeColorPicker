@@ -1,6 +1,6 @@
 # nativeColorPicker
 
-A JavaScript Native Color Picker Polyfill for *Internet Explorer*
+A JavaScript Native Color Picker Polyfill for *Internet Explorer* for the HTML5 <input type="color">
 
 ## Browser support
 IE5.5+
@@ -17,7 +17,7 @@ See [ChooseColorDlg method in MSDN](http://msdn.microsoft.com/en-us/library/ie/m
 ### Internet Explorer
 ![nativeColorPicker Internet Explorer](http://dciccale.github.com/nativeColorPicker/nativeColorPicker_ie.jpg)
 
-### Google Chrome
+### Google Chrome (just using HTML5 <input type="color"> no js here)
 ![nativeColorPicker Google Chrome](http://dciccale.github.com/nativeColorPicker/nativeColorPicker_chrome.jpg)
 
 ## License
