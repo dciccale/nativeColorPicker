@@ -10,7 +10,7 @@ IE5.5+
 
 ### How?
 
-See [ChooseColorDlg method in MSDN](http://msdn.microsoft.com/en-us/library/ie/ms536349(v=vs.85).aspx)
+See <a href="http://msdn.microsoft.com/en-us/library/ie/ms536349(v=vs.85).aspx">ChooseColorDlg method in MSDN</a>
 
 ## Screenshots
 
