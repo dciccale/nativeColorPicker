@@ -4,11 +4,11 @@ A JavaScript Native Color Picker Polyfill for *Internet Explorer* for the HTML5 
 ## Browser support
 IE6+
 
-## Usage
+## Demo
 ### See [demo.html](https://github.com/dciccale/nativeColorPicker/blob/master/demo.html) [online](http://dciccale.github.com/nativeColorPicker)
 
-## How?
-See [ChooseColorDlg method in MSDN](http://msdn.microsoft.com/en-us/library/ie/ms536349(v=vs.85).aspx)
+### How?
+See <a href="http://msdn.microsoft.com/en-us/library/ie/ms536349(v=vs.85).aspx">ChooseColorDlg method in MSDN</a>
 
 ## Screenshots
 
