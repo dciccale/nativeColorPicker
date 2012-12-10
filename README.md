@@ -1,5 +1,5 @@
 # nativeColorPicker
-A JavaScript Native Color Picker Polyfill for *Internet Explorer* for the HTML5 `<input type="color">`
+A Native Color Picker Polyfill for the HTML5's "color" input type on *Internet Explorer*
 
 ## Browser support
 IE6+
