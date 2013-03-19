@@ -5,7 +5,7 @@ A Native Color Picker Polyfill for the HTML5's "color" input type on *Internet E
 IE6+
 
 ## Demo
-### See [demo.html](https://github.com/dciccale/nativeColorPicker/blob/master/demo.html) [online](http://dciccale.github.com/nativeColorPicker)
+### See [demo.html](https://github.com/dciccale/nativeColorPicker/blob/master/demo.html) - [online](http://dciccale.github.com/nativeColorPicker)
 
 ## Usage
 (just showing the minimum code needed)
