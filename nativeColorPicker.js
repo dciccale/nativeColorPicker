@@ -3,12 +3,16 @@
     nativeColorPicker = {
       // initialized flag
       started: false,
+      
       // start color
       color: '#000000',
+      
       // inputs where plugin was initialized
       inputs: {},
+      
       // flag to know if color input is supported
       hasNativeColorSupport: false,
+      
       // inits the plugin on specified input
       init: function (inputId) {
         // start the plugin
@@ -23,7 +27,11 @@
         }
 
         // set the input
-        this.input = this.inputs[inputId] = this.inputs[inputId] || document.getElementById(inputId);
+        this.input = (this.inputs[inputId] = this.inputs[inputId]) || document.getElementById(inputId);
+        
+        if (!this.input) {
+          throw 'There was no input found with id: "' + inputId + '"';
+        }
 
         // input defaults
         this.input.value = this.color;
@@ -40,9 +48,10 @@
           nativeColorPicker.onFocus(this.id);
         };
       },
+      
       // initialize once
       start: function () {
-        // is already started!
+        // is already started
         if (this.started) {
           return;
         }
@@ -66,6 +75,7 @@
         // mark as started
         this.started = true;
       },
+      
       // destroys the plugin
       destroy: function (inputId) {
         var i;
@@ -83,6 +93,7 @@
           this.started = false;
         }
       },
+      
       off: function (input) {
         input.onfocus = null;
         this.css(input, {
@@ -92,6 +103,7 @@
           cursor: ''
         });
       },
+      
       // input focus function
       onFocus: function (inputId) {
         this.input = this.inputs[inputId];
@@ -103,6 +115,7 @@
         });
         this.input.blur();
       },
+      
       // gets the color from the object
       // and normalize it
       getColor: function () {
@@ -118,6 +131,7 @@
 
         return '#' + hex;
       },
+      
       // set css properties
       css: function (el, props) {
         for (var prop in props) {
