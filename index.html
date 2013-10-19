@@ -24,10 +24,9 @@
   window.nativeColorPicker.init('color');
   window.nativeColorPicker.init('color2');
 
-  ///// just for button clicks /////
+  // just for button clicks
   var $=function(id){return document.getElementById(id)},alertColor=function(){alert($(this.id.split('_')[1]).value);};
   $('btn_color').onclick = alertColor;
   $('btn_color2').onclick = alertColor;
-  //////////////////////////////////////
 }());
 </script>
